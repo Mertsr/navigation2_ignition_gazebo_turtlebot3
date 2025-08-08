@@ -1,0 +1,17 @@
+rtabmap:
+  ros__parameters:
+    frame_id: "base_link"
+    odom_frame_id: "odom"
+    map_frame_id: "map"
+
+    subscribe_depth: true
+    subscribe_rgb: true
+    subscribe_rgbd: false
+    subscribe_point_cloud2: false   # Sadece RGB-D ile çalışıyorsan bu false olmalı
+
+    # Diğer önemli ayarlar
+    Rtabmap/DetectionRate: "2.0"
+    Kp/MaxDepth: "8.0"
+    Grid/RangeMax: "6.0"
+    Grid/3D: "false"
+    # İhtiyaca göre diğer ayarları ekleyebilirsin
